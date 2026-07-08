@@ -1,78 +1,85 @@
-# Full‑Stack Ecommerce Platform Tutorial
+# 🛍️ Full-Stack E-Commerce Platform
 
-<div align="center">
-  <br />
-  <a href="https://youtu.be/DLeAPn5-TIA" target="_blank">
-    <img src="./banner.png" alt="Project Banner">
-  </a>
-  <br />
-  <div>
-    <img src="https://img.shields.io/badge/-Next.js-000?style=for-the-badge&logo=next.js" alt="Next.js" />
-    <img src="https://img.shields.io/badge/-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS" />
-    <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/-Stripe-6772e5?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" />
-    <img src="https://img.shields.io/badge/-Zustand-000?style=for-the-badge" alt="Zustand" />
-  </div>
-  <h3 align="center">Build a Modern Ecommerce Platform</h3>
-  <div align="center">
-    Follow along with our detailed tutorial on 
-    <a href="https://youtu.be/YOUR_VIDEO_LINK" target="_blank"><b>YouTube</b></a>
-  </div>
-  <br />
-</div>
+[![Project Banner](https://github.com/Peter-Lee00/E-Commerce/raw/main/banner.png)](https://e-commerce-snowy-two-99.vercel.app)
+
+[![Next.js](https://img.shields.io/badge/-Next.js-000?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Stripe](https://img.shields.io/badge/-Stripe-6772e5?style=for-the-badge&logo=stripe&logoColor=white)](https://stripe.com/)
+[![Zustand](https://img.shields.io/badge/-Zustand-000?style=for-the-badge)](https://github.com/pmndrs/zustand)
+[![Gemini AI](https://img.shields.io/badge/-Gemini%20AI-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://ai.google.dev/)
+
+**Live demo:** [e-commerce-snowy-two-99.vercel.app](https://e-commerce-snowy-two-99.vercel.app)
 
 ## 📋 Table of Contents
 
-1. [Introduction](#introduction)
+1. [Overview](#overview)
 2. [Tech Stack](#tech-stack)
 3. [Features](#features)
-4. [Quick Start](#quick-start)
-5. [Code Snippets](#code-snippets)
-6. [Assets & More](#assets--more)
+4. [Getting Started](#getting-started)
+5. [Project Structure](#project-structure)
 
-## 🚀 Introduction
+## 🚀 Overview
 
-In this video tutorial, you'll learn how to build a fully functional ecommerce platform using modern web technologies such as Next.js 15, Tailwind CSS v4, Stripe for payments, and Zustand for state management. This project focuses on building a sleek, responsive frontend with a secure payment flow—without using a backend database like Prisma, Postgres, or Neon.
-
-Watch the tutorial on [YouTube](https://youtu.be/YOUR_VIDEO_LINK).
+A full-stack e-commerce web app built from scratch with **Next.js 15** and **TypeScript**. It combines a responsive storefront, a secure Stripe checkout flow, and a **Gemini AI-powered shopping assistant** that helps customers find products through natural language.
 
 ## ⚙️ Tech Stack
 
-- **Next.js 15** – For server components and modern routing
-- **Tailwind CSS v4** – For rapid, responsive styling using a CSS‑first configuration
-- **TypeScript** – For type safety and modern JavaScript features
-- **Stripe** – For product management and payment processing
-- **Zustand** – For lightweight client‑side state management
+- **Next.js 15** – App Router, server components, and modern routing
+- **Tailwind CSS v4** – CSS-first styling for a fast, responsive UI
+- **TypeScript** – End-to-end type safety
+- **Stripe** – Product catalog and payment processing
+- **Zustand** – Lightweight global state management (cart, UI state)
+- **Gemini AI** – Conversational product assistant / chatbot
 
 ## ⚡️ Features
 
-- **Dynamic Product Carousel:**  
-  A landing page featuring an auto‑cycling carousel that showcases your top products.
+- **AI Shopping Assistant** — Gemini-powered chatbot that answers product questions and gives recommendations in natural language
+- **Dynamic Product Carousel** — Auto-cycling showcase of featured products on the landing page
+- **Responsive Product Pages** — Detailed product views with quantity controls
+- **Real-Time Cart** — Live-updating cart state across the app via Zustand
+- **Stripe Checkout** — Secure, hosted payment flow with a success confirmation page
+- **Dark Mode** — Full light/dark theme support
 
-- **Responsive Product Pages:**  
-  Detailed pages with interactive plus/minus buttons to adjust item quantities in the cart.
-
-- **Real‑Time Cart State:**  
-  A live-updating cart icon in the navbar using Zustand.
-
-- **Seamless Stripe Checkout:**  
-  A secure checkout process powered by Stripe's API.
-
-- **Modern UI:**  
-  A sleek, professional design built with Tailwind CSS v4 and shadcn‑inspired UI components.
-
-## 👌 Quick Start
+## 👌 Getting Started
 
 ### Prerequisites
 
-- [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/)
 
-### Cloning the Repository
-
-Run the following commands in your terminal:
+### Installation
 
 ```bash
-git clone https://github.com/yourusername/your-ecommerce-repo.git
-cd your-ecommerce-repo
+git clone https://github.com/Peter-Lee00/E-Commerce.git
+cd E-Commerce
+npm install
+```
+
+Create a `.env.local` file with your own keys:
+
+```
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_key
+STRIPE_SECRET_KEY=your_key
+GEMINI_API_KEY=your_key
+```
+
+Then run the dev server:
+
+```bash
+npm run dev
+```
+
+## 📁 Project Structure
+
+```
+├── app/          # Next.js App Router pages & API routes
+├── components/   # UI components (product cards, chatbot, cart, etc.)
+├── lib/          # Utility functions and API clients (Stripe, Gemini)
+├── store/        # Zustand state stores
+└── public/       # Static assets
+```
+
+---
+
+Built by [Peter Lee](https://github.com/Peter-Lee00)
