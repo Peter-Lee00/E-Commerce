@@ -8,7 +8,6 @@
 [![Zustand](https://img.shields.io/badge/-Zustand-000?style=for-the-badge)](https://github.com/pmndrs/zustand)
 [![Gemini AI](https://img.shields.io/badge/-Gemini%20AI-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://ai.google.dev/)
 
-**Live demo:** [e-commerce-snowy-two-99.vercel.app](https://e-commerce-snowy-two-99.vercel.app)
 
 ## 📋 Table of Contents
 
