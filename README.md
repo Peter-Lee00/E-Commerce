@@ -1,6 +1,5 @@
 # 🛍️ Full-Stack E-Commerce Platform
 
-[![Project Banner](https://github.com/Peter-Lee00/E-Commerce/raw/main/banner.png)](https://e-commerce-snowy-two-99.vercel.app)
 
 [![Next.js](https://img.shields.io/badge/-Next.js-000?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
