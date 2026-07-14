@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { ProductList } from "@/components/product-list";
 import { stripe } from "@/lib/stripe";
 
